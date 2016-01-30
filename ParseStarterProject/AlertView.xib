@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CheckedInViewBarcode">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7KY-RR-H9B">
+                    <rect key="frame" x="113" y="25" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="75" id="UOw-nF-wMz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bVr-PL-zLf">
+                    <rect key="frame" x="32" y="108" width="236" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="n7i-UJ-Q5d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="has been checked in." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00m-KS-oXi">
+                    <rect key="frame" x="32" y="145" width="236" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="aOz-qG-3qn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bVr-PL-zLf" firstAttribute="top" secondItem="7KY-RR-H9B" secondAttribute="bottom" constant="8" symbolic="YES" id="015-nM-n0I"/>
+                <constraint firstItem="7KY-RR-H9B" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="25" id="5Z4-2X-t89"/>
+                <constraint firstItem="00m-KS-oXi" firstAttribute="top" secondItem="bVr-PL-zLf" secondAttribute="bottom" id="8bw-y5-r87"/>
+                <constraint firstItem="7KY-RR-H9B" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="NyO-Fi-cts"/>
+                <constraint firstItem="7KY-RR-H9B" firstAttribute="centerX" secondItem="bVr-PL-zLf" secondAttribute="centerX" id="VQi-8c-GL5"/>
+                <constraint firstItem="00m-KS-oXi" firstAttribute="trailing" secondItem="bVr-PL-zLf" secondAttribute="trailing" id="WlM-cx-oQc"/>
+                <constraint firstItem="bVr-PL-zLf" firstAttribute="leading" secondItem="00m-KS-oXi" secondAttribute="leading" id="eXM-eO-yek"/>
+                <constraint firstItem="bVr-PL-zLf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="hz0-7E-f3c"/>
+                <constraint firstAttribute="bottom" secondItem="00m-KS-oXi" secondAttribute="bottom" constant="34" id="iqM-52-yZZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="image" destination="7KY-RR-H9B" id="Kkk-15-aFb"/>
+                <outlet property="studentName" destination="bVr-PL-zLf" id="x4L-Kh-zZs"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="298"/>
+        </view>
+    </objects>
+</document>
